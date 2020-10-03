@@ -16,8 +16,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'backend',
+    'clusters',
     'dashboard',
+    'resources',
+    'security',
+    'settings',
 
 
 ]
@@ -38,7 +41,7 @@ ROOT_URLCONF = 'Kui.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend')]
+        'DIRS': [os.path.join(BASE_DIR, 'Frontend')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -57,7 +60,7 @@ WSGI_APPLICATION = 'Kui.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'kui.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'k8s-ui.sqlite3'),
     }
 }
 
