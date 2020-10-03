@@ -1,0 +1,8 @@
+Django
+Django-admin
+djangorestframework
+markdown
+django-filter
+django-cors-headers
+cryptography
+kubernetes
